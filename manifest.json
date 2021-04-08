@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "z2n(ZoomChat to nicoCome)",
+  "description": "Display zoom chat messages like comments on Nico Nico Douga.",
+  "version": "0.1.1",
+  "icons": {
+    "128": "z2n.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "z2n.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.zoom.us/*",
+        "https://zoom.us/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://test.ikaken.com/content2.html"
+      ],
+      "js": [
+        "content2.js",
+        "gsap.js"
+      ]
+    }
+  ]
+}
