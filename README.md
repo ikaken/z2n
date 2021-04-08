@@ -1,8 +1,8 @@
 # z2n
-z2n(ZoomChat to nicoCome).
+z2n(ZoomChat to nicoCome).<br>
 Display zoom chat messages like comments on Nico Nico Douga.
 
-Chromeの拡張機能です。
+Chromeの拡張機能です。<br>
 Web版Zoomのチャットを取得し、グリーンバックのページにニコ動風コメントを流します。
 
 ## 使い方
