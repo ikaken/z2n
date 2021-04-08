@@ -20,5 +20,5 @@ Web版Zoomのチャットを取得し、グリーンバックのページにニ�
 
 ### グリーンバックページの設定（文字サイズとか）<br>
 「manifest.json」と「popup.js」にある<br>
-「https://test.ikaken.com/content2.html」の部分を、<br>
+「 https://test.ikaken.com/content2.html 」の部分を、<br>
 任意のファイルに換えることでグリーンバックページのカスタムが可能です。<br>
