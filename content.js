@@ -1,21 +1,19 @@
 
 var interval;
-
-let count = 0;
+//let count = 0;
 let msgcount = 0;
 let msgtext = "";
 
-console.log("content.js ver 04");
-
+console.log("content.js ver 05");
 
 chrome.runtime.onMessage.addListener(
   function (request, sender, sendResponse) {
     // debugger;
 
-    console.log("var 51");
+    console.log("var 52");
 
     //チャットメッセージ取得処理（定期実行）
-    if (request.method === "opencommentpage") {
+    if (request.method === "openCommentPage") {
 
       console.log("setInterval 01");
 

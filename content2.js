@@ -1,35 +1,16 @@
 
-
-console.log("content2.js var 08");
+console.log("content2.js var 10");
 let count = 0;
 
-chrome.runtime.onMessage.addListener(
-  function (request, sender, sendResponse) {
-    // debugger;
-
-    console.log(request.method + " : " + request.text + " => content2 var 06");
-
-    if (request.method === "sndmsg") {
-      //      createText(request.text);   //コメントを流す
-    }
-  }
-);
-
-
+//strageが変更されたらメッセージを読み込みアニメーション処理に渡す
 chrome.storage.onChanged.addListener(function (changes, namespace) {
-
   chrome.storage.local.get(['sndmsg'], function (result) {
-
     console.log('storage onChanged var 02 => ' + result.sndmsg);
     createText(result.sndmsg);   //コメントを流す
-
   });
-
 });
 
-
-
-
+//アニメーション処理
 async function createText(msgtext) {
 
   console.log("アニメーション処理 var 10");
