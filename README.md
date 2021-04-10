@@ -23,3 +23,8 @@ OBSのクロマキー合成などでお使い下さい。
 「manifest.json」と「popup.js」にある<br>
 「 https://test.ikaken.com/content2.html 」の部分を、<br>
 任意のファイルに換えることでグリーンバックページのカスタムが可能です。<br>
+
+## 謝辞
+
+テキストアニメーション部分はこちらのソースをお借りしました。
+https://qiita.com/youtoy/items/051dc658025a3b21c7f0
