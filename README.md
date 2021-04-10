@@ -4,6 +4,7 @@ Display zoom chat messages like comments on Nico Nico Douga.
 
 Chromeの拡張機能です。<br>
 Web版Zoomのチャットを取得し、グリーンバックのページにニコ動風コメントを流します。
+OBSのクロマキー合成などでお使い下さい。
 
 ## 使い方
 １）Chrome拡張機能のデベロッパーモードを有効にする<br>
