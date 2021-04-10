@@ -3,7 +3,7 @@ z2n(ZoomChat to nicoCome).<br>
 Display zoom chat messages like comments on Nico Nico Douga.
 
 Chromeの拡張機能です。<br>
-Web版Zoomのチャットを取得し、グリーンバックのページにニコ動風コメントを流します。
+Web版Zoomのチャットを取得し、グリーンバックのページにニコ動風コメントを流します。<br>
 OBSのクロマキー合成などでお使い下さい。
 
 ## 使い方
@@ -23,3 +23,10 @@ OBSのクロマキー合成などでお使い下さい。
 「manifest.json」と「popup.js」にある<br>
 「 https://test.ikaken.com/content2.html 」の部分を、<br>
 任意のファイルに換えることでグリーンバックページのカスタムが可能です。<br>
+
+## 謝辞
+
+テキストアニメーション部分はこちらのソースをお借りしました。
+
+実質20行ほどでニコニコ動画風のコメント表示機能を作る 〜素の JavaScript とアニメーション用ライブラリ（GSAP）を利用〜<br>
+https://qiita.com/youtoy/items/051dc658025a3b21c7f0
