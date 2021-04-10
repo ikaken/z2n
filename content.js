@@ -26,7 +26,7 @@ chrome.runtime.onMessage.addListener(
             console.log('storage local set ver 02 => ' + msgtext);
           });
         }
-      }, 1000); //チャット取得間隔（1000ミリ秒）
+      }, 100); //チャット取得間隔（100ミリ秒）
 
     }
 
