@@ -1,6 +1,6 @@
 
 
-console.log("content2.js var 04");
+console.log("content2.js var 08");
 let count = 0;
 
 chrome.runtime.onMessage.addListener(
@@ -10,15 +10,29 @@ chrome.runtime.onMessage.addListener(
     console.log(request.method + " : " + request.text + " => content2 var 06");
 
     if (request.method === "sndmsg") {
-      createText(request.text);   //コメントを流す
+      //      createText(request.text);   //コメントを流す
     }
   }
 );
 
 
+chrome.storage.onChanged.addListener(function (changes, namespace) {
+
+  chrome.storage.local.get(['sndmsg'], function (result) {
+
+    console.log('storage onChanged var 02 => ' + result.sndmsg);
+    createText(result.sndmsg);   //コメントを流す
+
+  });
+
+});
+
+
+
+
 async function createText(msgtext) {
 
-  console.log("アニメーション処理 var 05");
+  console.log("アニメーション処理 var 10");
 
   let div_text = document.createElement('div');
   div_text.id = "text" + count; //アニメーション処理で対象の指定に必要なidを設定
