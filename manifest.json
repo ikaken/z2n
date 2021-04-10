@@ -30,7 +30,7 @@
       ],
       "js": [
         "content2.js",
-        "gsap.js"
+        "gsap.min.js"
       ]
     }
   ]
