@@ -25,7 +25,7 @@ chrome.runtime.onMessage.addListener(
           for (let e of query) {
             console.log(e.textContent + e.id);
           }
-          msgtext = query[query.length - 1].textContent;    //メッセージテキストを生成
+          msgtext = query[query.length - 1].textContent;    //メッセージテキストを生成（最後のメッセージのテキストを取得）
           msgcount = query.length;    //メッセージ数（カウント）を更新
 
           //          chrome.runtime.sendMessage({ method: "sndmsg", text: msgtext });  //バックグランドページへメッセージ送信
