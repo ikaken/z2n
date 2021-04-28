@@ -16,7 +16,7 @@ chrome.runtime.onMessage.addListener(
       clearInterval(interval);
       //チャットメッセージ取得処理（定期実行）
       interval = setInterval(() => {
-        const query = document.querySelectorAll('.chat-message-text-content');  //メッセージの履歴取得（複数）
+        const query = document.querySelectorAll('.chat-message__text-content');  //メッセージの履歴取得（複数）
         console.log(query.length);    //メッセージの数
         if (msgcount != query.length) {   //新しいメッセージが入ったら
           msgtext = query[query.length - 1].textContent;    //最後のメッセージのテキストを取得
