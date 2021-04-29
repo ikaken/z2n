@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "z2n(ZoomChat to nicoCome)",
   "description": "Display zoom chat messages like comments on Nico Nico Douga.",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "icons": {
     "128": "z2n.png"
   },
@@ -11,8 +11,7 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "storage",
-    "activeTab"
+    "storage"
   ],
   "content_scripts": [
     {
