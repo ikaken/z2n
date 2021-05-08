@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       chrome.tabs.sendMessage(tabs[0].id, { method: "openCommentPage" });
       //グリーンバック用のページを開く
-      chrome.tabs.create({ url: "https://test.ikaken.com/content2.html" }, (tab) => {
+      chrome.windows.create({ url: "https://test.ikaken.com/content2.html" }, (tab) => {
       });
     });
   }, false);
